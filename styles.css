@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(25, 206, 212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tarjeta {
+  background-color: azure;
+  width: 350px;
+  padding: 20px;
+  box-shadow: 18px -25px 28px -6px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+
+.parte-abajo {
+  display: grid;
+  grid-template-columns: repeat(2, 175px);
+}
+
+.cuadro-uno {
+  background-color: darkgrey;
+  padding: 5px;
+  /*display: block;*/
+}
+
+.cuadro-dos {
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.parte-arriba h3 {
+  padding: 10px;
+  color: aqua;
+}
+
+.parte-arriba h4 {
+  color: darkolivegreen;
+}
+
+.parte-arriba p {
+  color: darkgrey;
+}
+
+.cuadro-dos p {
+  font-size: 10px;
+}
