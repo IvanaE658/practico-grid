@@ -17,7 +17,7 @@ body {
   width: 350px;
   padding: 20px;
   box-shadow: 18px -25px 28px -6px rgba(0, 0, 0, 0.75);
-  border-radius: 20px;
+  /*border-radius: 20px;*/
 }
 
 .parte-abajo {
@@ -27,8 +27,7 @@ body {
 
 .cuadro-uno {
   background-color: darkgrey;
-  padding: 5px;
-  /*display: block;*/
+  padding: 20px;
 }
 
 .cuadro-dos {
@@ -38,8 +37,11 @@ body {
 
 .parte-arriba h3 {
   padding: 10px;
-  color: aqua;
+  color: rgb(14, 226, 233);
+  text-shadow: 0, 0, 10px red;
+  animation: mostrar-titulo 3s alternate forwards;
 }
+
 
 .parte-arriba h4 {
   color: darkolivegreen;
@@ -47,8 +49,34 @@ body {
 
 .parte-arriba p {
   color: darkgrey;
+  margin-bottom: 20px;
 }
 
 .cuadro-dos p {
   font-size: 10px;
+}
+
+.cuadro-uno h6 {
+  margin-bottom: 10px;
+}
+
+.precio {
+  display: flex;
+  gap: 10px;
+}
+
+.precio h5 {
+  font-size: 10px;
+}
+
+@keyframes mostrar-titulo {
+  form {
+    opacity: 0;
+    transform: traslateY(20px) skew(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: traslateY(0) skew(10deg);
+  }
 }
